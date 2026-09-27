@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>StreetChat</title>
+</head>
+<body>
+  <main id="chat" class="chat" aria-label="Street chat">
+    <section class="feed panel" id="feed" aria-live="polite"></section>
+    <section class="composer panel">
+      <div class="composer-head">
+        <span class="signal">STREETKINGS // CHAT</span>
+        <span class="channel-state">ACTIVE</span>
+      </div>
+      <h1 id="mode-label" class="mode-label">LOCAL <em>CHAT</em></h1>
+      <div class="input-row">
+        <span class="chevron">//</span>
+        <input id="message-input" autocomplete="off" maxlength="280" placeholder="TYPE A MESSAGE" />
+        <kbd>ESC</kbd>
+      </div>
+      <div id="suggestions" class="suggestions"></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
